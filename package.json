@@ -1,0 +1,33 @@
+{
+  "name": "css-modules-example",
+  "version": "1.0.0",
+  "description": "A small working example of CSS Modules, using Webpack's css-loader in module mode.",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markdalgleish/css-modules-example"
+  },
+  "author": "Mark Dalgleish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markdalgleish/css-modules-example/issues"
+  },
+  "homepage": "https://github.com/markdalgleish/css-modules-example",
+  "devDependencies": {
+    "babel-core": "^5.2.17",
+    "babel-loader": "^5.0.0",
+    "css-loader": "^0.14.0",
+    "ejs": "^2.3.1",
+    "extract-text-webpack-plugin": "^0.8.0",
+    "node-libs-browser": "^0.5.0",
+    "react": "^0.13.3",
+    "react-to-html-webpack-plugin": "^2.1.0",
+    "style-loader": "^0.12.2",
+    "webpack": "^1.9.8",
+    "webpack-dev-server": "^1.8.2"
+  }
+}

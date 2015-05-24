@@ -1,0 +1,9 @@
+.root {
+  extends: box from "styles/layout.css";
+  border-color: red;
+}
+
+.text {
+  extends: heading from "styles/typography.css";
+  color: red;
+}
