@@ -20,7 +20,7 @@ export default class App extends Component {
 
         <h2>Class Inheritance</h2>
         <p>Both of the components below have <strong>locally scoped CSS</strong> that <strong>inherits from a common set of CSS Modules.</strong></p>
-        <p>Since CSS Modules can be composed, the resulting markup is optimised by <b>reusing classes between components</b>.</p>
+        <p>Since <strong>CSS Modules can be composed</strong>, the resulting markup is optimised by <b>reusing classes between components</b>.</p>
         <ClassInheritance />
 
         <h2>Inheritance Overrides</h2>
