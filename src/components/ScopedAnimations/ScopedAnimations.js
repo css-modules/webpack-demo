@@ -1,8 +1,8 @@
-import styles from './BouncingBall.css';
+import styles from './ScopedAnimations.css';
 
 import React, { Component } from 'react';
 
-export default class BouncingBall extends Component {
+export default class ScopedAnimations extends Component {
 
   render() {
     return (
