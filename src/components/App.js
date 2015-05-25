@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import HelloWorld from './HelloWorld/HelloWorld';
 import FooBar from './FooBar/FooBar';
 
+import InheritanceOverrides from './InheritanceOverrides/InheritanceOverrides';
+
 import BouncingBall from './BouncingBall/BouncingBall';
 
 export default class App extends Component {
@@ -19,6 +21,10 @@ export default class App extends Component {
         <HelloWorld />
         <br />
         <FooBar />
+
+        <p>When extending classes, <strong>inherited style properties can be overridden</strong> as you'd expect.</p>
+        <p>The following component extends two different classes, but provides overrides which then take precedence.</p>
+        <InheritanceOverrides />
 
         <p>CSS Modules even provide <strong>locally scoped animations</strong>, which are typically defined in the global scope.</p>
         <p>The following <strong>BouncingBall</strong> component extends a <strong>".bounce"</strong> class from a separate animations module.</p>
