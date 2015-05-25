@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import ScopedSelectors from './ScopedSelectors/ScopedSelectors';
+import GlobalSelectors from './GlobalSelectors/GlobalSelectors';
 import ClassInheritance from './ClassInheritance/ClassInheritance';
 import InheritanceOverrides from './InheritanceOverrides/InheritanceOverrides';
 import ScopedAnimations from './ScopedAnimations/ScopedAnimations';
@@ -33,6 +34,11 @@ export default class App extends Component {
         <p>CSS Modules even provide <strong>locally scoped animations</strong>, which are typically defined in the global scope.</p>
         <p>The animation's keyframes are private to the animations module, only exposed publicly via a class which this component inherits from.</p>
         <ScopedAnimations />
+
+        <h2>Global Selectors</h2>
+        <p>Although they should be used as sparingly as possible, <strong>global selectors are still available when required.</strong></p>
+        <p>The following component styles all <strong>&lt;p&gt;</strong> tags nested inside it.</p>
+        <GlobalSelectors />
 
       </div>
     );

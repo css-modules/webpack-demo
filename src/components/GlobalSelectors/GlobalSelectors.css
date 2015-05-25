@@ -1,0 +1,15 @@
+.root {
+  border-width: 2px;
+  border-style: solid;
+  border-color: brown;
+  padding: 0 20px;
+  margin: 0 6px;
+  max-width: 400px;
+}
+
+.root :global p {
+  color: brown;
+  font-size: 24px;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 600;
+}
