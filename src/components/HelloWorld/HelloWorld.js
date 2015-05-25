@@ -1,8 +1,8 @@
 import styles from './HelloWorld.css';
 
-import React from 'react';
+import React, { Component } from 'react';
 
-export default class Demo extends React.Component {
+export default class HelloWorld extends Component {
 
   render() {
     return (

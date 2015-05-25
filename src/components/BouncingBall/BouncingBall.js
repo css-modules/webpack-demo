@@ -1,13 +1,13 @@
-import styles from './FooBar.css';
+import styles from './BouncingBall.css';
 
 import React, { Component } from 'react';
 
-export default class FooBar extends Component {
+export default class BouncingBall extends Component {
 
   render() {
     return (
       <div className={styles.root}>
-        <p className={styles.text}>FooBar</p>
+        <div className={styles.ball} />
       </div>
     );
   }

@@ -1,0 +1,11 @@
+.root {
+  padding: 20px 10px;
+}
+
+.ball {
+  extends: bounce from "styles/animations.css";
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: rebeccapurple;
+}
