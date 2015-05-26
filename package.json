@@ -1,7 +1,7 @@
 {
-  "name": "css-modules-example",
+  "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "A small working example of CSS Modules, using Webpack's css-loader in module mode.",
+  "description": "Working demo of CSS Modules, using Webpack's css-loader in module mode.",
   "main": "index.js",
   "scripts": {
     "test": "webpack",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/markdalgleish/css-modules-example"
+    "url": "https://github.com/css-modules/webpack-demo"
   },
   "author": "Mark Dalgleish",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/markdalgleish/css-modules-example/issues"
+    "url": "https://github.com/css-modules/webpack-demo/issues"
   },
-  "homepage": "https://github.com/markdalgleish/css-modules-example",
+  "homepage": "https://github.com/css-modules/webpack-demo",
   "devDependencies": {
     "autoprefixer-core": "^5.1.11",
     "babel-core": "^5.2.17",

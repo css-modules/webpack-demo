@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>CSS Modules Example</h1>
+        <h1>CSS Modules Webpack Demo</h1>
 
         <h2>Scoped Selectors</h2>
         <p>In CSS Modules, selectors are scoped by default.</p>

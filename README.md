@@ -1,6 +1,6 @@
-# CSS Modules Example
+# CSS Modules Webpack Demo
 
-A small working example of **CSS Modules**, using [Webpack]'s [css-loader] in [module mode].
+A working demo of **CSS Modules**, using [Webpack]'s [css-loader] in [module mode].
 
 ## Run the example
 
