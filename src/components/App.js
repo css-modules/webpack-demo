@@ -1,5 +1,8 @@
+import styles from './App.css';
+
 import React, { Component } from 'react';
 
+import Logo from './Logo/Logo';
 import ScopedSelectors from './ScopedSelectors/ScopedSelectors';
 import GlobalSelectors from './GlobalSelectors/GlobalSelectors';
 import ClassInheritance from './ClassInheritance/ClassInheritance';
@@ -10,7 +13,8 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.app}>
+        <Logo />
         <h1>CSS Modules Webpack Demo</h1>
 
         <h2>Scoped Selectors</h2>
