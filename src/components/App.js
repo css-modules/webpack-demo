@@ -2,12 +2,12 @@ import styles from './App.css';
 
 import React, { Component } from 'react';
 
-import Logo from './Logo/Logo';
-import ScopedSelectors from './ScopedSelectors/ScopedSelectors';
-import GlobalSelectors from './GlobalSelectors/GlobalSelectors';
-import ClassInheritance from './ClassInheritance/ClassInheritance';
-import InheritanceOverrides from './InheritanceOverrides/InheritanceOverrides';
-import ScopedAnimations from './ScopedAnimations/ScopedAnimations';
+import Logo from './0-Logo/Logo';
+import ScopedSelectors from './1-ScopedSelectors/ScopedSelectors';
+import GlobalSelectors from './2-GlobalSelectors/GlobalSelectors';
+import ClassInheritance from './3-ClassInheritance/ClassInheritance';
+import InheritanceOverrides from './4-InheritanceOverrides/InheritanceOverrides';
+import ScopedAnimations from './5-ScopedAnimations/ScopedAnimations';
 
 export default class App extends Component {
 
@@ -34,7 +34,6 @@ export default class App extends Component {
         <InheritanceOverrides />
 
         <h2>Scoped Animations</h2>
-
         <p>CSS Modules even provide <strong>locally scoped animations</strong>, which are typically defined in the global scope.</p>
         <p>The animation's keyframes are private to the animations module, only exposed publicly via a class which this component inherits from.</p>
         <ScopedAnimations />
