@@ -1,11 +1,11 @@
 .root {
-  extends: box from "styles/layout.css";
+  extends: box from "shared/styles/layout.css";
   border-style: dotted;
   border-color: green;
 }
 
 .text {
-  extends: heading from "styles/typography.css";
+  extends: heading from "shared/styles/typography.css";
   font-weight: 200;
   color: green;
 }

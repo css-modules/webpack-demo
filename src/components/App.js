@@ -3,8 +3,8 @@ import styles from './App.css';
 import React, { Component } from 'react';
 
 import Logo from './0-Logo/Logo';
-import ScopedSelectors from './1-ScopedSelectors/ScopedSelectors';
-import GlobalSelectors from './2-GlobalSelectors/GlobalSelectors';
+import ScopedSelectorsDemo from './1-ScopedSelectors/ScopedSelectorsDemo';
+import GlobalSelectorsDemo from './2-GlobalSelectors/GlobalSelectorsDemo';
 import ClassInheritance from './3-ClassInheritance/ClassInheritance';
 import InheritanceOverrides from './4-InheritanceOverrides/InheritanceOverrides';
 import ScopedAnimations from './5-ScopedAnimations/ScopedAnimations';
@@ -21,7 +21,12 @@ export default class App extends Component {
         <p>In CSS Modules, selectors are scoped by default.</p>
         <p>The following component uses two classes, <strong>.root</strong> and <strong>.text</strong>, both of which would typically be too vague in a larger project.</p>
         <p>CSS Module semantics ensure that these <strong>classes are locally scoped</strong> to the component and don't collide with other classes in the global scope.</p>
-        <ScopedSelectors />
+        <ScopedSelectorsDemo />
+
+        <h2>Global Selectors</h2>
+        <p>Although they should be used as sparingly as possible, <strong>global selectors are still available when required.</strong></p>
+        <p>The following component styles all <strong>&lt;p&gt;</strong> tags nested inside it.</p>
+        <GlobalSelectorsDemo />
 
         <h2>Class Inheritance</h2>
         <p>Both of the components below have <strong>locally scoped CSS</strong> that <strong>inherits from a common set of CSS Modules.</strong></p>
@@ -37,11 +42,6 @@ export default class App extends Component {
         <p>CSS Modules even provide <strong>locally scoped animations</strong>, which are typically defined in the global scope.</p>
         <p>The animation's keyframes are private to the animations module, only exposed publicly via a class which this component inherits from.</p>
         <ScopedAnimations />
-
-        <h2>Global Selectors</h2>
-        <p>Although they should be used as sparingly as possible, <strong>global selectors are still available when required.</strong></p>
-        <p>The following component styles all <strong>&lt;p&gt;</strong> tags nested inside it.</p>
-        <GlobalSelectors />
 
       </div>
     );

@@ -3,7 +3,7 @@
 }
 
 .ball {
-  extends: bounce from "styles/animations.css";
+  extends: bounce from "shared/styles/animations.css";
   width: 40px;
   height: 40px;
   border-radius: 20px;
