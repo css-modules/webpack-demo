@@ -21607,7 +21607,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _ScopedAnimations = __webpack_require__(189);
+	var _ScopedAnimations = __webpack_require__(190);
 
 	var _ScopedAnimations2 = _interopRequireDefault(_ScopedAnimations);
 
@@ -21615,13 +21615,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _rawScopedAnimationsJs = __webpack_require__(191);
+	var _rawScopedAnimationsJs = __webpack_require__(192);
 
 	var _rawScopedAnimationsJs2 = _interopRequireDefault(_rawScopedAnimationsJs);
 
-	var _rawScopedAnimationsCss = __webpack_require__(192);
+	var _rawScopedAnimationsCss = __webpack_require__(189);
 
 	var _rawScopedAnimationsCss2 = _interopRequireDefault(_rawScopedAnimationsCss);
+
+	var _rawSharedStylesAnimationsCss = __webpack_require__(193);
+
+	var _rawSharedStylesAnimationsCss2 = _interopRequireDefault(_rawSharedStylesAnimationsCss);
 
 	var _sharedSnippetSnippet = __webpack_require__(163);
 
@@ -21641,7 +21645,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(ScopedAnimationsDemo, [{
 	    key: 'render',
 	    value: function render() {
-	      var files = [{ name: 'ScopedAnimations.js', source: _rawScopedAnimationsJs2['default'] }, { name: 'ScopedAnimations.css', source: _rawScopedAnimationsCss2['default'] }];
+	      var files = [{ name: 'ScopedAnimations.js', source: _rawScopedAnimationsJs2['default'] }, { name: 'ScopedAnimations.css', source: _rawScopedAnimationsCss2['default'] }, { name: 'shared/styles/animations.css', source: _rawSharedStylesAnimationsCss2['default'] }];
 
 	      return _react2['default'].createElement(
 	        _sharedSnippetSnippet2['default'],
@@ -21662,6 +21666,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = ".root {\n  padding: 20px 10px;\n}\n\n.ball {\n  extends: bounce from \"shared/styles/animations.css\";\n  width: 40px;\n  height: 40px;\n  border-radius: 20px;\n  background: rebeccapurple;\n}\n"
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
@@ -21676,7 +21686,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _ScopedAnimationsCss = __webpack_require__(190);
+	var _ScopedAnimationsCss = __webpack_require__(191);
 
 	var _ScopedAnimationsCss2 = _interopRequireDefault(_ScopedAnimationsCss);
 
@@ -21714,23 +21724,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"ScopedAnimations__root___31A0H","ball":"ScopedAnimations__ball___1jrfA animations__bounce___1So7p"};
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = "import styles from './ScopedAnimations.css';\n\nimport React, { Component } from 'react';\n\nexport default class ScopedAnimations extends Component {\n\n  render() {\n    return (\n      <div className={styles.root}>\n        <div className={styles.ball} />\n      </div>\n    );\n  }\n\n};\n"
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = ".root {\n  padding: 20px 10px;\n}\n\n.ball {\n  extends: bounce from \"shared/styles/animations.css\";\n  width: 40px;\n  height: 40px;\n  border-radius: 20px;\n  background: rebeccapurple;\n}\n"
+	module.exports = "@keyframes bounce {\n  33% { transform: translateY(-20px); }\n  66% { transform: translateY(0px); }\n}\n\n.bounce {\n  animation: bounce 1s infinite ease-in-out;\n}\n"
 
 /***/ }
 /******/ ])
