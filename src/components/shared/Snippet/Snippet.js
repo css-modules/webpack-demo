@@ -7,8 +7,14 @@ export default class Snippet extends Component {
   render() {
     return (
       <div>
-        <pre className={styles.pre}>{ this.props.js }</pre>
-        <pre className={styles.pre}>{ this.props.css }</pre>
+        {
+          this.props.files.map(file => (
+            <div key={file.name} className={styles.file}>
+              <div className={styles.fileName}>{ file.name }</div>
+              <pre className={styles.pre}>{ file.source }</pre>
+            </div>
+          ))
+        }
       </div>
     );
   }

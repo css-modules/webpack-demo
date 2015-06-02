@@ -1,11 +1,22 @@
-.pre {
+.file {
   background: #003957;
   color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
   max-width: 700px;
   border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.fileName {
+  background: #011E2D;
+  color: #00B37D;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.pre {
   overflow: auto;
   font-family: menlo, consolas, monospace;
   font-size: 14px;
   line-height: 20px;
+  padding: 5px 20px 20px;
 }

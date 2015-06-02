@@ -14,7 +14,10 @@ export default class ScopedSelectorsDemo extends Component {
         <br />
         <ScopedSelectors />
         <br />
-        <Snippet js={js} css={css} />
+        <Snippet files={[
+          { name: 'ScopedSelectors.js', source: js },
+          { name: 'ScopedSelectors.css', source: css }
+        ]} />
       </div>
     );
   }

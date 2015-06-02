@@ -14,7 +14,10 @@ export default class InheritanceOverridesDemo extends Component {
         <br />
         <InheritanceOverrides />
         <br />
-        <Snippet js={js} css={css} />
+        <Snippet files={[
+          { name: 'InheritanceOverrides.js', source: js },
+          { name: 'InheritanceOverrides.css', source: css }
+        ]} />
       </div>
     );
   }

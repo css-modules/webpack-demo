@@ -14,7 +14,10 @@ export default class ScopedAnimationsDemo extends Component {
         <br />
         <ScopedAnimations />
         <br />
-        <Snippet js={js} css={css} />
+        <Snippet files={[
+          { name: 'ScopedAnimations.js', source: js },
+          { name: 'ScopedAnimations.css', source: css }
+        ]} />
       </div>
     );
   }

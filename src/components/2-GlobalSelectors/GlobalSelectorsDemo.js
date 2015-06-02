@@ -14,7 +14,10 @@ export default class GlobalSelectorsDemo extends Component {
         <br />
         <GlobalSelectors />
         <br />
-        <Snippet js={js} css={css} />
+        <Snippet files={[
+          { name: 'GlobalSelectors.js', source: js },
+          { name: 'GlobalSelectors.css', source: css }
+        ]} />
       </div>
     );
   }
