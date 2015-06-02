@@ -13,6 +13,24 @@
   font-family: helvetica, arial, sans-serif;
   font-weight: 600;
 }
+.Snippet__root___2B-wp {
+  margin-top: 32px;
+}
+
+.Snippet__output___sVK0p {
+  background: white;
+  color: #333;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #003957;
+  border-top-width: 0;
+}
+
+.Snippet__outputContent___2_vnF {
+  padding: 40px 30px;
+}
+
 .Snippet__file___12x_l {
   background: #003957;
   color: rgba(255, 255, 255, 0.9);

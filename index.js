@@ -20494,11 +20494,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _ClassInheritanceClassInheritanceDemo2 = _interopRequireDefault(_ClassInheritanceClassInheritanceDemo);
 
-	var _InheritanceOverridesInheritanceOverridesDemo = __webpack_require__(182);
+	var _InheritanceOverridesInheritanceOverridesDemo = __webpack_require__(183);
 
 	var _InheritanceOverridesInheritanceOverridesDemo2 = _interopRequireDefault(_InheritanceOverridesInheritanceOverridesDemo);
 
-	var _ScopedAnimationsScopedAnimationsDemo = __webpack_require__(187);
+	var _ScopedAnimationsScopedAnimationsDemo = __webpack_require__(188);
 
 	var _ScopedAnimationsScopedAnimationsDemo2 = _interopRequireDefault(_ScopedAnimationsScopedAnimationsDemo);
 
@@ -20742,13 +20742,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(GlobalSelectorsDemo, [{
 	    key: 'render',
 	    value: function render() {
+	      var files = [{ name: 'GlobalSelectors.js', source: _rawGlobalSelectorsJs2['default'] }, { name: 'GlobalSelectors.css', source: _rawGlobalSelectorsCss2['default'] }];
+
 	      return _react2['default'].createElement(
-	        'div',
-	        null,
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_GlobalSelectors2['default'], null),
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_sharedSnippetSnippet2['default'], { files: [{ name: 'GlobalSelectors.js', source: _rawGlobalSelectorsJs2['default'] }, { name: 'GlobalSelectors.css', source: _rawGlobalSelectorsCss2['default'] }] })
+	        _sharedSnippetSnippet2['default'],
+	        { files: files },
+	        _react2['default'].createElement(_GlobalSelectors2['default'], null)
 	      );
 	    }
 	  }]);
@@ -20880,7 +20879,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function render() {
 	      return _react2['default'].createElement(
 	        'div',
-	        null,
+	        { className: _SnippetCss2['default'].root },
+	        _react2['default'].createElement(
+	          'div',
+	          { className: _SnippetCss2['default'].output },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: _SnippetCss2['default'].fileName },
+	            'Output'
+	          ),
+	          _react2['default'].createElement(
+	            'div',
+	            { className: _SnippetCss2['default'].outputContent },
+	            this.props.children
+	          )
+	        ),
 	        this.props.files.map(function (file) {
 	          return _react2['default'].createElement(
 	            'div',
@@ -20913,7 +20926,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"file":"Snippet__file___12x_l","fileName":"Snippet__fileName___Tz7_C","pre":"Snippet__pre___3b3O_"};
+	module.exports = {"root":"Snippet__root___2B-wp","output":"Snippet__output___sVK0p","outputContent":"Snippet__outputContent___2_vnF","file":"Snippet__file___12x_l","fileName":"Snippet__fileName___Tz7_C","pre":"Snippet__pre___3b3O_"};
 
 /***/ },
 /* 165 */
@@ -21032,13 +21045,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(ScopedSelectorsDemo, [{
 	    key: 'render',
 	    value: function render() {
+	      var files = [{ name: 'ScopedSelectors.js', source: _rawScopedSelectorsJs2['default'] }, { name: 'ScopedSelectors.css', source: _rawScopedSelectorsCss2['default'] }];
+
 	      return _react2['default'].createElement(
-	        'div',
-	        null,
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_ScopedSelectors2['default'], null),
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_sharedSnippetSnippet2['default'], { files: [{ name: 'ScopedSelectors.js', source: _rawScopedSelectorsJs2['default'] }, { name: 'ScopedSelectors.css', source: _rawScopedSelectorsCss2['default'] }] })
+	        _sharedSnippetSnippet2['default'],
+	        { files: files },
+	        _react2['default'].createElement(_ScopedSelectors2['default'], null)
 	      );
 	    }
 	  }]);
@@ -21146,7 +21158,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _ClassInheritance = __webpack_require__(175);
+	var _ClassInheritance = __webpack_require__(174);
 
 	var _ClassInheritance2 = _interopRequireDefault(_ClassInheritance);
 
@@ -21154,17 +21166,21 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _rawStyleVariantAStyleVariantAJs = __webpack_require__(180);
+	var _rawStyleVariantAStyleVariantAJs = __webpack_require__(179);
 
 	var _rawStyleVariantAStyleVariantAJs2 = _interopRequireDefault(_rawStyleVariantAStyleVariantAJs);
 
-	var _rawStyleVariantAStyleVariantACss = __webpack_require__(174);
+	var _rawStyleVariantAStyleVariantACss = __webpack_require__(180);
 
 	var _rawStyleVariantAStyleVariantACss2 = _interopRequireDefault(_rawStyleVariantAStyleVariantACss);
 
-	var _rawStyleVariantBStyleVariantBCss = __webpack_require__(181);
+	var _rawSharedStylesLayoutCss = __webpack_require__(181);
 
-	var _rawStyleVariantBStyleVariantBCss2 = _interopRequireDefault(_rawStyleVariantBStyleVariantBCss);
+	var _rawSharedStylesLayoutCss2 = _interopRequireDefault(_rawSharedStylesLayoutCss);
+
+	var _rawSharedStylesTypographyCss = __webpack_require__(182);
+
+	var _rawSharedStylesTypographyCss2 = _interopRequireDefault(_rawSharedStylesTypographyCss);
 
 	var _sharedSnippetSnippet = __webpack_require__(163);
 
@@ -21184,13 +21200,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(ClassInheritanceDemo, [{
 	    key: 'render',
 	    value: function render() {
+	      var files = [{ name: 'StyleVariantA.js', source: _rawStyleVariantAStyleVariantAJs2['default'] }, { name: 'StyleVariantA.css', source: _rawStyleVariantAStyleVariantACss2['default'] }, { name: 'shared/styles/layout.css', source: _rawSharedStylesLayoutCss2['default'] }, { name: 'shared/styles/typography.css', source: _rawSharedStylesTypographyCss2['default'] }];
+
 	      return _react2['default'].createElement(
-	        'div',
-	        null,
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_ClassInheritance2['default'], null),
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_sharedSnippetSnippet2['default'], { files: [{ name: 'StyleVariantA.js', source: _rawStyleVariantAStyleVariantAJs2['default'] }, { name: 'StyleVariantA.css', source: _rawStyleVariantAStyleVariantACss2['default'] }, { name: 'StyleVariantB.css', source: _rawStyleVariantBStyleVariantBCss2['default'] }] })
+	        _sharedSnippetSnippet2['default'],
+	        { files: files },
+	        _react2['default'].createElement(_ClassInheritance2['default'], null)
 	      );
 	    }
 	  }]);
@@ -21204,12 +21219,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = ".root {\n  extends: box from \"shared/styles/layout.css\";\n  border-color: red;\n}\n\n.text {\n  extends: heading from \"shared/styles/typography.css\";\n  color: red;\n}\n"
-
-/***/ },
-/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21230,11 +21239,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _StyleVariantAStyleVariantA = __webpack_require__(176);
+	var _StyleVariantAStyleVariantA = __webpack_require__(175);
 
 	var _StyleVariantAStyleVariantA2 = _interopRequireDefault(_StyleVariantAStyleVariantA);
 
-	var _StyleVariantBStyleVariantB = __webpack_require__(178);
+	var _StyleVariantBStyleVariantB = __webpack_require__(177);
 
 	var _StyleVariantBStyleVariantB2 = _interopRequireDefault(_StyleVariantBStyleVariantB);
 
@@ -21270,7 +21279,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21287,7 +21296,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _StyleVariantACss = __webpack_require__(177);
+	var _StyleVariantACss = __webpack_require__(176);
 
 	var _StyleVariantACss2 = _interopRequireDefault(_StyleVariantACss);
 
@@ -21329,14 +21338,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 177 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"StyleVariantA__root___31dVc layout__box___3mduB","text":"StyleVariantA__text___UVqO4 typography__heading___xZ-BK"};
 
 /***/ },
-/* 178 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21353,7 +21362,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _StyleVariantBCss = __webpack_require__(179);
+	var _StyleVariantBCss = __webpack_require__(178);
 
 	var _StyleVariantBCss2 = _interopRequireDefault(_StyleVariantBCss);
 
@@ -21395,93 +21404,35 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 179 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"StyleVariantB__root___FqYzD layout__box___3mduB","text":"StyleVariantB__text___2PHQn typography__heading___xZ-BK"};
 
 /***/ },
-/* 180 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = "import styles from './StyleVariantA.css';\n\nimport React, { Component } from 'react';\n\nexport default class StyleVariantA extends Component {\n\n  render() {\n    return (\n      <div className={styles.root}>\n        <p className={styles.text}>Style Variant A</p>\n      </div>\n    );\n  }\n\n};\n"
 
 /***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = ".root {\n  extends: box from \"shared/styles/layout.css\";\n  border-color: red;\n}\n\n.text {\n  extends: heading from \"shared/styles/typography.css\";\n  color: red;\n}\n"
+
+/***/ },
 /* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = ".root {\n  extends: box from \"shared/styles/layout.css\";\n  border-color: blue;\n}\n\n.text {\n  extends: heading from \"shared/styles/typography.css\";\n  color: blue;\n}\n"
+	module.exports = ".box {\n  border-width: 2px;\n  border-style: solid;\n  padding: 0 20px;\n  margin: 0 6px;\n  max-width: 400px;\n}\n"
 
 /***/ },
 /* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
-
-	var _InheritanceOverrides = __webpack_require__(183);
-
-	var _InheritanceOverrides2 = _interopRequireDefault(_InheritanceOverrides);
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _rawInheritanceOverridesJs = __webpack_require__(185);
-
-	var _rawInheritanceOverridesJs2 = _interopRequireDefault(_rawInheritanceOverridesJs);
-
-	var _rawInheritanceOverridesCss = __webpack_require__(186);
-
-	var _rawInheritanceOverridesCss2 = _interopRequireDefault(_rawInheritanceOverridesCss);
-
-	var _sharedSnippetSnippet = __webpack_require__(163);
-
-	var _sharedSnippetSnippet2 = _interopRequireDefault(_sharedSnippetSnippet);
-
-	var InheritanceOverridesDemo = (function (_Component) {
-	  function InheritanceOverridesDemo() {
-	    _classCallCheck(this, InheritanceOverridesDemo);
-
-	    if (_Component != null) {
-	      _Component.apply(this, arguments);
-	    }
-	  }
-
-	  _inherits(InheritanceOverridesDemo, _Component);
-
-	  _createClass(InheritanceOverridesDemo, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2['default'].createElement(
-	        'div',
-	        null,
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_InheritanceOverrides2['default'], null),
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_sharedSnippetSnippet2['default'], { files: [{ name: 'InheritanceOverrides.js', source: _rawInheritanceOverridesJs2['default'] }, { name: 'InheritanceOverrides.css', source: _rawInheritanceOverridesCss2['default'] }] })
-	      );
-	    }
-	  }]);
-
-	  return InheritanceOverridesDemo;
-	})(_react.Component);
-
-	exports['default'] = InheritanceOverridesDemo;
-	;
-	module.exports = exports['default'];
+	module.exports = ".heading {\n  font-size: 24px;\n  font-family: helvetica, arial, sans-serif;\n  font-weight: 600;\n}\n"
 
 /***/ },
 /* 183 */
@@ -21501,7 +21452,84 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _InheritanceOverridesCss = __webpack_require__(184);
+	var _InheritanceOverrides = __webpack_require__(184);
+
+	var _InheritanceOverrides2 = _interopRequireDefault(_InheritanceOverrides);
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _rawInheritanceOverridesJs = __webpack_require__(186);
+
+	var _rawInheritanceOverridesJs2 = _interopRequireDefault(_rawInheritanceOverridesJs);
+
+	var _rawInheritanceOverridesCss = __webpack_require__(187);
+
+	var _rawInheritanceOverridesCss2 = _interopRequireDefault(_rawInheritanceOverridesCss);
+
+	var _rawSharedStylesLayoutCss = __webpack_require__(181);
+
+	var _rawSharedStylesLayoutCss2 = _interopRequireDefault(_rawSharedStylesLayoutCss);
+
+	var _rawSharedStylesTypographyCss = __webpack_require__(182);
+
+	var _rawSharedStylesTypographyCss2 = _interopRequireDefault(_rawSharedStylesTypographyCss);
+
+	var _sharedSnippetSnippet = __webpack_require__(163);
+
+	var _sharedSnippetSnippet2 = _interopRequireDefault(_sharedSnippetSnippet);
+
+	var InheritanceOverridesDemo = (function (_Component) {
+	  function InheritanceOverridesDemo() {
+	    _classCallCheck(this, InheritanceOverridesDemo);
+
+	    if (_Component != null) {
+	      _Component.apply(this, arguments);
+	    }
+	  }
+
+	  _inherits(InheritanceOverridesDemo, _Component);
+
+	  _createClass(InheritanceOverridesDemo, [{
+	    key: 'render',
+	    value: function render() {
+	      var files = [{ name: 'InheritanceOverrides.js', source: _rawInheritanceOverridesJs2['default'] }, { name: 'InheritanceOverrides.css', source: _rawInheritanceOverridesCss2['default'] }, { name: 'shared/styles/layout.css', source: _rawSharedStylesLayoutCss2['default'] }, { name: 'shared/styles/typography.css', source: _rawSharedStylesTypographyCss2['default'] }];
+
+	      return _react2['default'].createElement(
+	        _sharedSnippetSnippet2['default'],
+	        { files: files },
+	        _react2['default'].createElement(_InheritanceOverrides2['default'], null)
+	      );
+	    }
+	  }]);
+
+	  return InheritanceOverridesDemo;
+	})(_react.Component);
+
+	exports['default'] = InheritanceOverridesDemo;
+	;
+	module.exports = exports['default'];
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+
+	var _InheritanceOverridesCss = __webpack_require__(185);
 
 	var _InheritanceOverridesCss2 = _interopRequireDefault(_InheritanceOverridesCss);
 
@@ -21543,26 +21571,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"InheritanceOverrides__root___3SrUS layout__box___3mduB","text":"InheritanceOverrides__text___2aftH typography__heading___xZ-BK"};
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = "import styles from './InheritanceOverrides.css';\n\nimport React, { Component } from 'react';\n\nexport default class InheritanceOverrides extends Component {\n\n  render() {\n    return (\n      <div className={styles.root}>\n        <p className={styles.text}>Inherited Styles with Overrides</p>\n      </div>\n    );\n  }\n\n};\n"
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = ".root {\n  extends: box from \"shared/styles/layout.css\";\n  border-style: dotted;\n  border-color: green;\n}\n\n.text {\n  extends: heading from \"shared/styles/typography.css\";\n  font-weight: 200;\n  color: green;\n}\n"
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21579,7 +21607,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _ScopedAnimations = __webpack_require__(188);
+	var _ScopedAnimations = __webpack_require__(189);
 
 	var _ScopedAnimations2 = _interopRequireDefault(_ScopedAnimations);
 
@@ -21587,11 +21615,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _rawScopedAnimationsJs = __webpack_require__(190);
+	var _rawScopedAnimationsJs = __webpack_require__(191);
 
 	var _rawScopedAnimationsJs2 = _interopRequireDefault(_rawScopedAnimationsJs);
 
-	var _rawScopedAnimationsCss = __webpack_require__(191);
+	var _rawScopedAnimationsCss = __webpack_require__(192);
 
 	var _rawScopedAnimationsCss2 = _interopRequireDefault(_rawScopedAnimationsCss);
 
@@ -21613,13 +21641,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(ScopedAnimationsDemo, [{
 	    key: 'render',
 	    value: function render() {
+	      var files = [{ name: 'ScopedAnimations.js', source: _rawScopedAnimationsJs2['default'] }, { name: 'ScopedAnimations.css', source: _rawScopedAnimationsCss2['default'] }];
+
 	      return _react2['default'].createElement(
-	        'div',
-	        null,
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_ScopedAnimations2['default'], null),
-	        _react2['default'].createElement('br', null),
-	        _react2['default'].createElement(_sharedSnippetSnippet2['default'], { files: [{ name: 'ScopedAnimations.js', source: _rawScopedAnimationsJs2['default'] }, { name: 'ScopedAnimations.css', source: _rawScopedAnimationsCss2['default'] }] })
+	        _sharedSnippetSnippet2['default'],
+	        { files: files },
+	        _react2['default'].createElement(_ScopedAnimations2['default'], null)
 	      );
 	    }
 	  }]);
@@ -21632,7 +21659,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21649,7 +21676,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
-	var _ScopedAnimationsCss = __webpack_require__(189);
+	var _ScopedAnimationsCss = __webpack_require__(190);
 
 	var _ScopedAnimationsCss2 = _interopRequireDefault(_ScopedAnimationsCss);
 
@@ -21687,20 +21714,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"root":"ScopedAnimations__root___31A0H","ball":"ScopedAnimations__ball___1jrfA animations__bounce___1So7p"};
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = "import styles from './ScopedAnimations.css';\n\nimport React, { Component } from 'react';\n\nexport default class ScopedAnimations extends Component {\n\n  render() {\n    return (\n      <div className={styles.root}>\n        <div className={styles.ball} />\n      </div>\n    );\n  }\n\n};\n"
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = ".root {\n  padding: 20px 10px;\n}\n\n.ball {\n  extends: bounce from \"shared/styles/animations.css\";\n  width: 40px;\n  height: 40px;\n  border-radius: 20px;\n  background: rebeccapurple;\n}\n"
