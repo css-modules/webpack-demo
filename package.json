@@ -8,7 +8,7 @@
     "start": "webpack-dev-server",
     "clean": "rm -rf dist",
     "build": "npm run clean && webpack",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\""
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "ejs": "^2.3.1",
     "extract-text-webpack-plugin": "^0.8.1",
     "file-loader": "^0.8.4",
+    "gh-pages": "git://github.com/markdalgleish/gh-pages#cli-message",
     "node-libs-browser": "^0.5.0",
     "postcss-color-rebeccapurple": "^1.1.0",
     "postcss-loader": "^0.4.3",
