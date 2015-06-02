@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && webpack",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
