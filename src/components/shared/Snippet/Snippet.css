@@ -1,3 +1,21 @@
+.root {
+  margin-top: 32px;
+}
+
+.output {
+  background: white;
+  color: #333;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #003957;
+  border-top-width: 0;
+}
+
+.outputContent {
+  padding: 40px 30px;
+}
+
 .file {
   background: #003957;
   color: rgba(255, 255, 255, 0.9);

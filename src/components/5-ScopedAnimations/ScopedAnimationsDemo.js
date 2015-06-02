@@ -9,16 +9,15 @@ import Snippet from 'shared/Snippet/Snippet';
 export default class ScopedAnimationsDemo extends Component {
 
   render() {
+    const files = [
+      { name: 'ScopedAnimations.js', source: js },
+      { name: 'ScopedAnimations.css', source: css }
+    ];
+
     return (
-      <div>
-        <br />
+      <Snippet files={files}>
         <ScopedAnimations />
-        <br />
-        <Snippet files={[
-          { name: 'ScopedAnimations.js', source: js },
-          { name: 'ScopedAnimations.css', source: css }
-        ]} />
-      </div>
+      </Snippet>
     );
   }
 

@@ -9,16 +9,15 @@ import Snippet from 'shared/Snippet/Snippet';
 export default class ScopedSelectorsDemo extends Component {
 
   render() {
+    const files = [
+      { name: 'ScopedSelectors.js', source: js },
+      { name: 'ScopedSelectors.css', source: css }
+    ];
+
     return (
-      <div>
-        <br />
+      <Snippet files={files}>
         <ScopedSelectors />
-        <br />
-        <Snippet files={[
-          { name: 'ScopedSelectors.js', source: js },
-          { name: 'ScopedSelectors.css', source: css }
-        ]} />
-      </div>
+      </Snippet>
     );
   }
 

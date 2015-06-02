@@ -3,24 +3,25 @@ import ClassInheritance from './ClassInheritance';
 import React, { Component } from 'react';
 
 import js from '!!raw!./StyleVariantA/StyleVariantA.js';
-import css_a from '!!raw!./StyleVariantA/StyleVariantA.css';
-import css_b from '!!raw!./StyleVariantB/StyleVariantB.css';
+import css from '!!raw!./StyleVariantA/StyleVariantA.css';
+import layoutCss from '!!raw!shared/styles/layout.css';
+import typographyCss from '!!raw!shared/styles/typography.css';
 import Snippet from 'shared/Snippet/Snippet';
 
 export default class ClassInheritanceDemo extends Component {
 
   render() {
+    const files = [
+      { name: 'StyleVariantA.js', source: js },
+      { name: 'StyleVariantA.css', source: css },
+      { name: 'shared/styles/layout.css', source: layoutCss },
+      { name: 'shared/styles/typography.css', source: typographyCss }
+    ];
+
     return (
-      <div>
-        <br />
+      <Snippet files={files}>
         <ClassInheritance />
-        <br />
-        <Snippet files={[
-          { name: 'StyleVariantA.js', source: js },
-          { name: 'StyleVariantA.css', source: css_a },
-          { name: 'StyleVariantB.css', source: css_b }
-        ]} />
-      </div>
+      </Snippet>
     );
   }
 

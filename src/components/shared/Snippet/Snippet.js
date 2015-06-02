@@ -6,7 +6,15 @@ export default class Snippet extends Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.root}>
+
+        <div className={styles.output}>
+          <div className={styles.fileName}>Output</div>
+          <div className={styles.outputContent}>
+            { this.props.children }
+          </div>
+        </div>
+
         {
           this.props.files.map(file => (
             <div key={file.name} className={styles.file}>
@@ -15,6 +23,7 @@ export default class Snippet extends Component {
             </div>
           ))
         }
+
       </div>
     );
   }

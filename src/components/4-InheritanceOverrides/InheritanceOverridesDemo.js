@@ -9,16 +9,15 @@ import Snippet from 'shared/Snippet/Snippet';
 export default class InheritanceOverridesDemo extends Component {
 
   render() {
+    const files = [
+      { name: 'InheritanceOverrides.js', source: js },
+      { name: 'InheritanceOverrides.css', source: css }
+    ];
+
     return (
-      <div>
-        <br />
+      <Snippet files={files}>
         <InheritanceOverrides />
-        <br />
-        <Snippet files={[
-          { name: 'InheritanceOverrides.js', source: js },
-          { name: 'InheritanceOverrides.css', source: css }
-        ]} />
-      </div>
+      </Snippet>
     );
   }
 

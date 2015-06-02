@@ -9,16 +9,15 @@ import Snippet from 'shared/Snippet/Snippet';
 export default class GlobalSelectorsDemo extends Component {
 
   render() {
+    const files = [
+      { name: 'GlobalSelectors.js', source: js },
+      { name: 'GlobalSelectors.css', source: css }
+    ];
+
     return (
-      <div>
-        <br />
+      <Snippet files={files}>
         <GlobalSelectors />
-        <br />
-        <Snippet files={[
-          { name: 'GlobalSelectors.js', source: js },
-          { name: 'GlobalSelectors.css', source: css }
-        ]} />
-      </div>
+      </Snippet>
     );
   }
 
