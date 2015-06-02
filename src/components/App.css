@@ -4,3 +4,10 @@
   line-height: 24px;
   padding: 6px 20px 30px;
 }
+
+.hr {
+  margin: 40px 0;
+  height: 1px;
+  border: 0;
+  background: #ccc;
+}

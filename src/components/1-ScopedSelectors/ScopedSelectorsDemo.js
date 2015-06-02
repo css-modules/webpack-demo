@@ -11,7 +11,9 @@ export default class ScopedSelectorsDemo extends Component {
   render() {
     return (
       <div>
+        <br />
         <ScopedSelectors />
+        <br />
         <Snippet js={js} css={css} />
       </div>
     );

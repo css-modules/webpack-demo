@@ -11,7 +11,9 @@ export default class GlobalSelectorsDemo extends Component {
   render() {
     return (
       <div>
+        <br />
         <GlobalSelectors />
+        <br />
         <Snippet js={js} css={css} />
       </div>
     );
