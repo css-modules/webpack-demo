@@ -101,26 +101,26 @@
   font-family: helvetica, arial, sans-serif;
   font-weight: 600;
 }
-.StyleVariantA__root___31dVc {
+.StyleVariantA__root___1gRpN {
   border-color: red;
 }
 
-.StyleVariantA__text___UVqO4 {
+.StyleVariantA__text___qC0Qk {
   color: red;
 }
-.StyleVariantB__root___FqYzD {
+.StyleVariantB__root___KlZE5 {
   border-color: blue;
 }
 
-.StyleVariantB__text___2PHQn {
+.StyleVariantB__text___2RHD6 {
   color: blue;
 }
-.InheritanceOverrides__root___3SrUS {
+.CompositionOverrides__root___2xnGH {
   border-style: dotted;
   border-color: green;
 }
 
-.InheritanceOverrides__text___2aftH {
+.CompositionOverrides__text___3eIkk {
   font-weight: 200;
   color: green;
 }
