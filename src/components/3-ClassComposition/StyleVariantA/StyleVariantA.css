@@ -1,0 +1,9 @@
+.root {
+  composes: box from "shared/styles/layout.css";
+  border-color: red;
+}
+
+.text {
+  composes: heading from "shared/styles/typography.css";
+  color: red;
+}

@@ -1,9 +1,0 @@
-.root {
-  extends: box from "shared/styles/layout.css";
-  border-color: red;
-}
-
-.text {
-  extends: heading from "shared/styles/typography.css";
-  color: red;
-}

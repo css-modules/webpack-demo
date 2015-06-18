@@ -1,4 +1,4 @@
-import ClassInheritance from './ClassInheritance';
+import ClassComposition from './ClassComposition';
 
 import React, { Component } from 'react';
 
@@ -8,7 +8,7 @@ import layoutCss from '!!raw!shared/styles/layout.css';
 import typographyCss from '!!raw!shared/styles/typography.css';
 import Snippet from 'shared/Snippet/Snippet';
 
-export default class ClassInheritanceDemo extends Component {
+export default class ClassCompositionDemo extends Component {
 
   render() {
     const files = [
@@ -20,7 +20,7 @@ export default class ClassInheritanceDemo extends Component {
 
     return (
       <Snippet files={files}>
-        <ClassInheritance />
+        <ClassComposition />
       </Snippet>
     );
   }

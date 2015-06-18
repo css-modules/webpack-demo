@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 import Logo from './0-Logo/Logo';
 import ScopedSelectorsDemo from './1-ScopedSelectors/ScopedSelectorsDemo';
 import GlobalSelectorsDemo from './2-GlobalSelectors/GlobalSelectorsDemo';
-import ClassInheritanceDemo from './3-ClassInheritance/ClassInheritanceDemo';
-import InheritanceOverridesDemo from './4-InheritanceOverrides/InheritanceOverridesDemo';
+import ClassCompositionDemo from './3-ClassComposition/ClassCompositionDemo';
+import CompositionOverridesDemo from './4-CompositionOverrides/CompositionOverridesDemo';
 import ScopedAnimationsDemo from './5-ScopedAnimations/ScopedAnimationsDemo';
 
 export default class App extends Component {
@@ -34,17 +34,17 @@ export default class App extends Component {
 
         <hr className={styles.hr} />
 
-        <h2>Class Inheritance</h2>
-        <p>Both of the components below have <strong>locally scoped CSS</strong> that <strong>inherits from a common set of CSS Modules.</strong></p>
+        <h2>Class Composition</h2>
+        <p>Both of the components below have <strong>locally scoped CSS</strong> that is <strong>composed from a common set of CSS Modules.</strong></p>
         <p>Since <strong>CSS Modules can be composed</strong>, the resulting markup is optimised by <b>reusing classes between components</b>.</p>
-        <ClassInheritanceDemo />
+        <ClassCompositionDemo />
 
         <hr className={styles.hr} />
 
-        <h2>Inheritance Overrides</h2>
-        <p>When extending classes, <strong>inherited style properties can be overridden</strong> as you'd expect.</p>
-        <p>The following component extends two different classes, but provides overrides which then take precedence.</p>
-        <InheritanceOverridesDemo />
+        <h2>Composition Overrides</h2>
+        <p>When composing classes, <strong>inherited style properties can be overridden</strong> as you'd expect.</p>
+        <p>The following component composes two different classes, but provides overrides which then take precedence.</p>
+        <CompositionOverridesDemo />
 
         <hr className={styles.hr} />
 

@@ -1,0 +1,11 @@
+.root {
+  composes: box from "shared/styles/layout.css";
+  border-style: dotted;
+  border-color: green;
+}
+
+.text {
+  composes: heading from "shared/styles/typography.css";
+  font-weight: 200;
+  color: green;
+}
