@@ -2,7 +2,7 @@
 
 # CSS Modules Webpack Demo
 
-A working demo of **CSS Modules**, using [Webpack]'s [css-loader] in [module mode].
+A working demo of [CSS Modules], using [Webpack]'s [css-loader] in [module mode].
 
 ## Run the example
 
@@ -15,6 +15,7 @@ $ npm start & open http://localhost:8080
 
 [MIT]
 
+[CSS Modules]: https://github.com/css-modules/css-modules
 [Webpack]: http://webpack.github.io
 [css-loader]: https://github.com/webpack/css-loader
 [module mode]: https://github.com/webpack/css-loader/#module-mode
