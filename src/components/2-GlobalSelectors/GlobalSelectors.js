@@ -7,7 +7,7 @@ export default class GlobalSelectors extends Component {
   render() {
     return (
       <div className={ styles.root }>
-        <p>Global Selectors</p>
+        <p className="text">Global Selectors</p>
       </div>
     );
   }
