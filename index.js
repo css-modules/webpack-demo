@@ -20804,7 +20804,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        { className: _GlobalSelectorsCss2['default'].root },
 	        _react2['default'].createElement(
 	          'p',
-	          null,
+	          { className: 'text' },
 	          'Global Selectors'
 	        )
 	      );
@@ -20829,13 +20829,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "import styles from './GlobalSelectors.css';\n\nimport React, { Component } from 'react';\n\nexport default class GlobalSelectors extends Component {\n\n  render() {\n    return (\n      <div className={ styles.root }>\n        <p>Global Selectors</p>\n      </div>\n    );\n  }\n\n};\n"
+	module.exports = "import styles from './GlobalSelectors.css';\n\nimport React, { Component } from 'react';\n\nexport default class GlobalSelectors extends Component {\n\n  render() {\n    return (\n      <div className={ styles.root }>\n        <p className=\"text\">Global Selectors</p>\n      </div>\n    );\n  }\n\n};\n"
 
 /***/ },
 /* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = ".root {\n  border-width: 2px;\n  border-style: solid;\n  border-color: brown;\n  padding: 0 20px;\n  margin: 0 6px;\n  max-width: 400px;\n}\n\n.root :global p {\n  color: brown;\n  font-size: 24px;\n  font-family: helvetica, arial, sans-serif;\n  font-weight: 600;\n}\n"
+	module.exports = ".root {\n  border-width: 2px;\n  border-style: solid;\n  border-color: brown;\n  padding: 0 20px;\n  margin: 0 6px;\n  max-width: 400px;\n}\n\n.root :global .text {\n  color: brown;\n  font-size: 24px;\n  font-family: helvetica, arial, sans-serif;\n  font-weight: 600;\n}\n"
 
 /***/ },
 /* 163 */
