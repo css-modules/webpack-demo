@@ -7,7 +7,7 @@
   max-width: 400px;
 }
 
-.root :global p {
+.root :global .text {
   color: brown;
   font-size: 24px;
   font-family: helvetica, arial, sans-serif;
