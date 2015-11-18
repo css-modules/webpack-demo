@@ -70,10 +70,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _componentsApp2 = _interopRequireDefault(_componentsApp);
 
-	if (typeof document !== 'undefined') {
-	  _react2['default'].render(_react2['default'].createElement(_componentsApp2['default'], null), document.getElementById('outlet'));
-	}
-
 	exports['default'] = _componentsApp2['default'];
 	module.exports = exports['default'];
 
