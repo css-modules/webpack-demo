@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/css-modules/webpack-demo",
   "devDependencies": {
-    "autoprefixer-core": "^5.1.11",
+    "autoprefixer": "^5.1.11",
     "babel-core": "^5.2.17",
     "babel-loader": "^5.0.0",
     "css-loader": "^0.15.1",
