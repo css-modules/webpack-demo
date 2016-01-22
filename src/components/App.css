@@ -1,6 +1,18 @@
+@font-face {
+    font-family: 'gooddogregular';
+    src: url('shared/fonts/gooddog-webfont.eot');
+    src: url('shared/fonts/gooddog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('shared/fonts/gooddog-webfont.woff2') format('woff2'),
+         url('shared/fonts/gooddog-webfont.woff') format('woff'),
+         url('shared/fonts/gooddog-webfont.ttf') format('truetype'),
+         url('shared/fonts/gooddog-webfont.svg#gooddogregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .app {
   text-size-adjust: none;
-  font-family: helvetica, arial, sans-serif;
+  font-family: gooddogregular;
   line-height: 200%;
   padding: 6px 20px 30px;
 }
