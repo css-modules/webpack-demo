@@ -1,18 +1,19 @@
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var ReactToHtmlPlugin = require('react-to-html-webpack-plugin');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var postcssImport = require('postcss-import');
 var path = require('path');
-var ejs = require('ejs');
-var fs = require('fs');
 
 module.exports = {
-  entry: './src/index.js',
+
+  entry: {
+    ie: ['./src/ie.js'],
+    bundle: ['./src/index.js']
+  },
 
   output: {
-    filename: 'index.js',
-    path: path.resolve('./dist'),
-    libraryTarget: 'umd'
+    filename: '[name].js',
+    path: path.resolve('./dist')
   },
 
   module: {
@@ -23,20 +24,30 @@ module.exports = {
     ]
   },
 
-  postcss: [
-    require('autoprefixer-core'),
-    require('postcss-color-rebeccapurple')
-  ],
+  postcss: (webpack) => {
+    return [
+      postcssImport({
+        addDependencyTo: webpack
+      }),
+      require('postcss-simple-vars')(),
+      require('autoprefixer')({
+        browsers: ['last 2 versions', 'IE > 8']
+      }),
+      require('postcss-reporter')({
+        clearMessages: true
+      })
+    ];
+  },
 
   resolve: {
     modulesDirectories: ['node_modules', 'components']
   },
 
   plugins: [
-    new ExtractTextPlugin('style.css', { allChunks: true }),
-    new ReactToHtmlPlugin('index.html', 'index.js', {
-      static: true,
-      template: ejs.compile(fs.readFileSync(__dirname + '/src/template.ejs', 'utf-8'))
+    new ExtractTextPlugin('[name].css', { allChunks: true }),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      inject: false
     })
   ]
 };
