@@ -1,6 +1,7 @@
 import styles from './App.css';
 
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 
 import Logo from './0-Logo/Logo';
 import ScopedSelectorsDemo from './1-ScopedSelectors/ScopedSelectorsDemo';
@@ -9,7 +10,7 @@ import ClassCompositionDemo from './3-ClassComposition/ClassCompositionDemo';
 import CompositionOverridesDemo from './4-CompositionOverrides/CompositionOverridesDemo';
 import ScopedAnimationsDemo from './5-ScopedAnimations/ScopedAnimationsDemo';
 
-export default class App extends Component {
+class App extends Component {
 
   render() {
     return (
@@ -58,3 +59,5 @@ export default class App extends Component {
   }
 
 };
+
+render(<App/>, document.getElementById('root'))
