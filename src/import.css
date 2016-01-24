@@ -1,3 +1,5 @@
+$blue:   #056ef0;
+
 @font-face {
   font-family: 'robotoregular';
   src: url('shared/fonts/roboto-regular-webfont.eot');
@@ -10,16 +12,8 @@
   font-style: normal;
 }
 
-.app {
-  text-size-adjust: none;
-  font-family: 'robotoregular', helvetica, arial, sans-serif;
-  line-height: 200%;
-  padding: 6px 20px 30px;
-}
-
-.hr {
-  margin: 40px 0;
-  height: 1px;
-  border: 0;
-  background: #ccc;
+html {
+  font-size: 24px;
+  color: red;
+  font-family: robotoregular;
 }
