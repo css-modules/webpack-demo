@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "webpack",
+    "prestart": "npm run build",
     "start": "webpack-dev-server",
     "clean": "rm -rf dist",
     "build": "npm run clean && webpack",
