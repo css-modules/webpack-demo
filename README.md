@@ -14,7 +14,7 @@ $ npm start & open http://localhost:8080
 ## npm modules required for CSS modules
 
 In this project's `package.json` file you find a lot of npm modules for this demo application. Since not all of them are required for the actual CSS modules features,
-we've created the following list to describe their purposes. 
+we've created the following list to describe their purposes.
 
 **Required modules**
 
@@ -31,14 +31,22 @@ To make CSS modules work with Webpack you only have to include the modules menti
 . . .
 {
   test: /\.css$/,
-  loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+  loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
 }
 . . .
 ```
 
+**Useful loader options**
+
+The following optional css-loader query parameters (.e.g, `loader: 'css-loader?' + query`) may prove useful for using CSS modules:
+
+|Query|Usage|Description|
+|-----|-----|-----------|
+|`camelCase`|`css-loader?camelCase`|Camel cases the exported class name keys. Helpful to maintain dashes in css and camel casing in javascript.|
+
 **Optional modules**
 
-The following modules control the *actual CSS processing*. They are *not* CSS modules specific and can be used with both "regular" CSS and CSS modules: 
+The following modules control the *actual CSS processing*. They are *not* CSS modules specific and can be used with both "regular" CSS and CSS modules:
 
 |Module|Description|
 |------|------------|
@@ -46,7 +54,7 @@ The following modules control the *actual CSS processing*. They are *not* CSS mo
 |[autoprefixer-core](https://github.com/ai/autoprefixer-core)|Add vendor-prefixes to your css code (according to the GitHub page it is deprecated and should be replaced by [autoprefixer](https://github.com/postcss/autoprefixer)|
 |[postcss-color-rebeccapurple](https://github.com/postcss/postcss-color-rebeccapurple)|Another CSS post processor. Only needed to support `rebeccapurple` color in CSS|
 |[extract-text-webpack-plugin](https://github.com/webpack/extract-text-webpack-plugin)|Writes the CSS code processed by Webpack into an own CSS-file and not into the generated bundle JavaScript file.|
-  
+
 **Unrelated modules**
 
 This modules are only needed for the demo application:
