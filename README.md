@@ -24,7 +24,7 @@ The following modules are the only ones really needed to get started with CSS mo
 |------|------------|
 |[Webpack]|Webpack (obviously...)|
 |[webpack-dev-server]|(Optional) Supports hotloading of changed files etc while developing||
-|[style-loader] and [css-loader]|`style-loader` and `css-loader` process your CSS files. `css-loader` is the loader that actual makes [CSS modules] work|
+|[style-loader] and [css-loader]|`style-loader` and `css-loader` process your CSS files. `css-loader` is the loader that actually makes [CSS modules] work|
 
 To make CSS modules work with Webpack you only have to include the modules mentioned above and add the following loader to your `webpack.config.js` file:
 ```
