@@ -55,7 +55,7 @@ This modules are only needed for the demo application:
 |------|------------|
 |[babel]|ESx-to-ES5 compiler. Mostly needed for React code|
 |[ejs]|JavaScript templating language|
-|[react-to-html-webpack-plugin]|Webpack plug-in that renders React components|
+|[static-site-generator-webpack-plugin]|Minimal, unopinionated static site generator powered by webpack.|
 |[node-libs-browser]|Node libraries for in-browser use|
 |[gh-pages]|Publishes file to a `gh-pages` branches for GitHub pages|
 |[url-loader]|Webpack file handling, e.g. for images|
@@ -78,6 +78,6 @@ This modules are only needed for the demo application:
 [babel]: https://babeljs.io
 [node-libs-browser]: https://github.com/webpack/node-libs-browser
 [gh-pages]: https://github.com/tschaub/gh-pages
-[react-to-html-webpack-plugin]: https://github.com/markdalgleish/react-to-html-webpack-plugin
+[static-site-generator-webpack-plugin]: https://github.com/markdalgleish/static-site-generator-webpack-plugin
 [ejs]: http://www.embeddedjs.com/
 [MIT]: http://markdalgleish.mit-license.org
