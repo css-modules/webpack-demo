@@ -49,7 +49,7 @@ The following modules control the *actual CSS processing*. They are *not* CSS mo
   
 **Unrelated modules**
 
-This modules are only needed for the demo application:
+These modules are only needed for the demo application:
 
 |Module|Description |
 |------|------------|
