@@ -13,8 +13,7 @@ $ npm start & open http://localhost:8080
 
 ## npm modules required for CSS modules
 
-In this project's `package.json` file you find a lot of npm modules for this demo application. Since not all of them are required for the actual CSS modules features,
-we've created the following list to describe their purposes. 
+In this project's `package.json` file you will find a lot of npm modules for this demo application. Since not all of them are required to use CSS modules, we've created the following list to describe their purpose. 
 
 **Required modules**
 
@@ -23,10 +22,10 @@ The following modules are the only ones really needed to get started with CSS mo
 |Module|Description|
 |------|------------|
 |[Webpack]|Webpack (obviously...)|
-|[webpack-dev-server]|(Optional) Supports hotloading of changed files etc while developing||
-|[style-loader] and [css-loader]|`style-loader` and `css-loader` process your CSS files. `css-loader` is the loader that actual makes [CSS modules] work|
+|[webpack-dev-server]|(Optional) Supports hotloading of changed files, etc., while developing||
+|[style-loader] and [css-loader]|`style-loader` and `css-loader` process your CSS files. `css-loader` is the loader that actually makes [CSS modules] work|
 
-To make CSS modules work with Webpack you only have to include the modules mentioned above and add the following loader to your `webpack.config.js` file:
+To make CSS modules work with Webpack you only have to include the modules mentioned above, and add the following loader to your `webpack.config.js` file:
 ```
 . . .
 {
@@ -38,18 +37,18 @@ To make CSS modules work with Webpack you only have to include the modules menti
 
 **Optional modules**
 
-The following modules control the *actual CSS processing*. They are *not* CSS modules specific and can be used with both "regular" CSS and CSS modules: 
+The following modules control the *actual CSS processing*. They are *not* CSS modules specific, and can be used with both "regular" CSS and CSS modules: 
 
 |Module|Description|
 |------|------------|
-|[postcss-loader](https://github.com/postcss/postcss-loader)|Allows execution of various CSS post processor in Webpack. Required for `autoprefixer-core` and `postcss-color-rebeccapurple`|
-|[autoprefixer-core](https://github.com/ai/autoprefixer-core)|Add vendor-prefixes to your css code (according to the GitHub page it is deprecated and should be replaced by [autoprefixer](https://github.com/postcss/autoprefixer)|
-|[postcss-color-rebeccapurple](https://github.com/postcss/postcss-color-rebeccapurple)|Another CSS post processor. Only needed to support `rebeccapurple` color in CSS|
-|[extract-text-webpack-plugin](https://github.com/webpack/extract-text-webpack-plugin)|Writes the CSS code processed by Webpack into an own CSS-file and not into the generated bundle JavaScript file.|
+|[postcss-loader](https://github.com/postcss/postcss-loader)|Allows execution of various CSS post processors in Webpack. Required for `autoprefixer-core` and `postcss-color-rebeccapurple`|
+|[autoprefixer-core](https://github.com/ai/autoprefixer-core)|Add vendor-prefixes to your css code (according to the GitHub page, it is deprecated and should be replaced by [autoprefixer](https://github.com/postcss/autoprefixer)|
+|[postcss-color-rebeccapurple](https://github.com/postcss/postcss-color-rebeccapurple)|Another CSS post processor. This is only needed to support `rebeccapurple` color in CSS|
+|[extract-text-webpack-plugin](https://github.com/webpack/extract-text-webpack-plugin)|Writes the CSS code processed by Webpack into its own CSS-file, and not into the generated bundle JavaScript file.|
   
 **Unrelated modules**
 
-This modules are only needed for the demo application:
+These modules are only needed for the demo application:
 
 |Module|Description |
 |------|------------|
@@ -57,7 +56,7 @@ This modules are only needed for the demo application:
 |[ejs]|JavaScript templating language|
 |[react-to-html-webpack-plugin]|Webpack plug-in that renders React components|
 |[node-libs-browser]|Node libraries for in-browser use|
-|[gh-pages]|Publishes file to a `gh-pages` branches for GitHub pages|
+|[gh-pages]|Publishes file to a `gh-pages` branch for GitHub pages|
 |[url-loader]|Webpack file handling, e.g. for images|
 |[file-loader]|Webpack file handling, e.g. for images|
 |[raw-loader]|It’s used to load raw css files (as utf8) into the demo so it can be rendered into `<code>`|
