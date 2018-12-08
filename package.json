@@ -24,7 +24,6 @@
     "file-loader": "^0.8.4",
     "gh-pages": "git://github.com/markdalgleish/gh-pages#cli-message",
     "node-libs-browser": "^0.5.0",
-    "style-loader": "^0.12.3",
     "url-loader": "^0.5.6"
   },
   "dependencies": {
@@ -34,7 +33,6 @@
     "autoprefixer": "^9.4.2",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
-    "ejs": "^2.6.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.5",
     "postcss": "^7.0.6",
