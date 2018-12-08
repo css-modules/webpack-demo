@@ -66,7 +66,7 @@ This modules are only needed for the demo application:
 |Module|Description |
 |------|------------|
 |[babel]|ESx-to-ES5 compiler. Mostly needed for React code|
-|[html-webpack-plugin]|Webpack plug-in that renders React components|
+|[html-webpack-plugin]|Webpack plug-in that renders html template |
 |[node-libs-browser]|Node libraries for in-browser use|
 |[gh-pages]|Publishes file to a `gh-pages` branches for GitHub pages|
 |[url-loader]|Webpack file handling, e.g. for images|
