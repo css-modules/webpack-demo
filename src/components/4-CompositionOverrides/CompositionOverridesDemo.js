@@ -2,10 +2,10 @@ import CompositionOverrides from './CompositionOverrides';
 
 import React, { Component } from 'react';
 
-import js from '!!raw!./CompositionOverrides.js';
-import css from '!!raw!./CompositionOverrides.css';
-import layoutCss from '!!raw!shared/styles/layout.css';
-import typographyCss from '!!raw!shared/styles/typography.css';
+import js from '!!raw-loader!./CompositionOverrides.js';
+import css from '!!raw-loader!./CompositionOverrides.css';
+import layoutCss from '!!raw-loader!shared/styles/layout.css';
+import typographyCss from '!!raw-loader!shared/styles/typography.css';
 import Snippet from 'shared/Snippet/Snippet';
 
 export default class CompositionOverridesDemo extends Component {

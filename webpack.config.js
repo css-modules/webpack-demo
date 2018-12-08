@@ -1,12 +1,12 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var ReactToHtmlPlugin = require('react-to-html-webpack-plugin');
+const path = require('path');
 
-var path = require('path');
-var ejs = require('ejs');
-var fs = require('fs');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
+
   entry: './src/index.js',
 
   output: {
@@ -16,27 +16,38 @@ module.exports = {
   },
 
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader') },
-      { test: /\.svg$/, loader: "url-loader?limit=10000&mimetype=image/svg+xml" }
+    rules: [
+      { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
+              sourceMap: true
+            }
+          },
+          { loader: 'postcss-loader', options: { sourceMap: true } }
+        ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
+      }
     ]
   },
 
-  postcss: [
-    require('autoprefixer-core'),
-    require('postcss-color-rebeccapurple')
-  ],
-
   resolve: {
-    modulesDirectories: ['node_modules', 'components']
+    modules: ['node_modules', 'components']
   },
 
   plugins: [
-    new ExtractTextPlugin('style.css', { allChunks: true }),
-    new ReactToHtmlPlugin('index.html', 'index.js', {
-      static: true,
-      template: ejs.compile(fs.readFileSync(__dirname + '/src/template.ejs', 'utf-8'))
-    })
+    new MiniCssExtractPlugin({ filename: '[name].css', allChunks: true }),
+    new HtmlWebpackPlugin({ template: 'src/index.html' }),
+    new WriteFilePlugin()
   ]
 };

@@ -2,10 +2,10 @@ import ClassComposition from './ClassComposition';
 
 import React, { Component } from 'react';
 
-import js from '!!raw!./StyleVariantA/StyleVariantA.js';
-import css from '!!raw!./StyleVariantA/StyleVariantA.css';
-import layoutCss from '!!raw!shared/styles/layout.css';
-import typographyCss from '!!raw!shared/styles/typography.css';
+import js from '!!raw-loader!./StyleVariantA/StyleVariantA.js';
+import css from '!!raw-loader!./StyleVariantA/StyleVariantA.css';
+import layoutCss from '!!raw-loader!shared/styles/layout.css';
+import typographyCss from '!!raw-loader!shared/styles/typography.css';
 import Snippet from 'shared/Snippet/Snippet';
 
 export default class ClassCompositionDemo extends Component {
