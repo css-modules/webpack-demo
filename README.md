@@ -24,15 +24,27 @@ The following modules are the only ones really needed to get started with CSS mo
 |------|------------|
 |[Webpack]|Webpack (obviously...)|
 |[webpack-dev-server]|(Optional) Supports hotloading of changed files etc while developing||
-|[style-loader] and [css-loader]|`style-loader` and `css-loader` process your CSS files. `css-loader` is the loader that actual makes [CSS modules] work|
+|[style-loader] or [mini-css-extract-plugin] (includes style-loader) and [css-loader]|`style-loader` and `css-loader` process your CSS files. `css-loader` is the loader that actual makes [CSS modules] work|
 
 To make CSS modules work with Webpack you only have to include the modules mentioned above and add the following loader to your `webpack.config.js` file:
 ```
 . . .
 {
   test: /\.css$/,
-  loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+  use: [
+    { loader: 'style-loader },
+    {
+      loader: 'css-loader',
+      options: {
+        modules: true,
+        importLoaders: 1,
+        localIdentName: '[name]__[local]___[hash:base64:5]',
+        sourceMap: true
+      }
+    }
+  ]
 }
+
 . . .
 ```
 
@@ -42,10 +54,10 @@ The following modules control the *actual CSS processing*. They are *not* CSS mo
 
 |Module|Description|
 |------|------------|
-|[postcss-loader](https://github.com/postcss/postcss-loader)|Allows execution of various CSS post processor in Webpack. Required for `autoprefixer-core` and `postcss-color-rebeccapurple`|
-|[autoprefixer-core](https://github.com/ai/autoprefixer-core)|Add vendor-prefixes to your css code (according to the GitHub page it is deprecated and should be replaced by [autoprefixer](https://github.com/postcss/autoprefixer)|
+|[postcss-loader](https://github.com/postcss/postcss-loader)|Allows execution of various CSS post processor in Webpack. Required for `autoprefixer` and `postcss-color-rebeccapurple` plugins|
+|[autoprefixer](https://github.com/postcss/autoprefixer)|Add vendor-prefixes to your css code |
 |[postcss-color-rebeccapurple](https://github.com/postcss/postcss-color-rebeccapurple)|Another CSS post processor. Only needed to support `rebeccapurple` color in CSS|
-|[extract-text-webpack-plugin](https://github.com/webpack/extract-text-webpack-plugin)|Writes the CSS code processed by Webpack into an own CSS-file and not into the generated bundle JavaScript file.|
+|[mini-css-extract-plugin]|Writes the CSS code processed by Webpack into an own CSS-file and not into the generated bundle JavaScript file.|
   
 **Unrelated modules**
 
@@ -54,8 +66,7 @@ This modules are only needed for the demo application:
 |Module|Description |
 |------|------------|
 |[babel]|ESx-to-ES5 compiler. Mostly needed for React code|
-|[ejs]|JavaScript templating language|
-|[react-to-html-webpack-plugin]|Webpack plug-in that renders React components|
+|[html-webpack-plugin]|Webpack plug-in that renders React components|
 |[node-libs-browser]|Node libraries for in-browser use|
 |[gh-pages]|Publishes file to a `gh-pages` branches for GitHub pages|
 |[url-loader]|Webpack file handling, e.g. for images|
@@ -72,12 +83,12 @@ This modules are only needed for the demo application:
 [css-loader]: https://github.com/webpack/css-loader
 [module mode]: https://github.com/webpack/css-loader/#css-modules
 [style-loader]: https://github.com/webpack/style-loader
+[mini-css-extract-plugin]: https://github.com/webpack-contrib/mini-css-extract-plugin
 [url-loader]: https://github.com/webpack/url-loader
 [file-loader]: https://github.com/webpack/file-loader
 [raw-loader]: https://github.com/webpack/raw-loader
 [babel]: https://babeljs.io
 [node-libs-browser]: https://github.com/webpack/node-libs-browser
 [gh-pages]: https://github.com/tschaub/gh-pages
-[react-to-html-webpack-plugin]: https://github.com/markdalgleish/react-to-html-webpack-plugin
-[ejs]: http://www.embeddedjs.com/
+[html-webpack-plugin]: https://github.com/jantimon/html-webpack-plugin
 [MIT]: http://markdalgleish.mit-license.org
