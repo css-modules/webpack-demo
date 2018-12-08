@@ -2,9 +2,9 @@ import ScopedAnimations from './ScopedAnimations';
 
 import React, { Component } from 'react';
 
-import js from '!!raw!./ScopedAnimations.js';
-import css from '!!raw!./ScopedAnimations.css';
-import animationsCss from '!!raw!shared/styles/animations.css';
+import js from '!!raw-loader!./ScopedAnimations.js';
+import css from '!!raw-loader!./ScopedAnimations.css';
+import animationsCss from '!!raw-loader!shared/styles/animations.css';
 import Snippet from 'shared/Snippet/Snippet';
 
 export default class ScopedAnimationsDemo extends Component {

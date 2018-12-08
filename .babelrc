@@ -1,0 +1,12 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": "commonjs",
+        "useBuiltIns": "entry"
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
